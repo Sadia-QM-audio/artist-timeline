@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+<div class="homepageContent">
+    <h3>Welcome to the artwork timeline generator!</h3>
+    <p> Enter an artist's name in the search bar below, and see a timeline of their work.
+    <br> Examples: Vincent van Gogh, Henri-Edmond Cross, Jean-Léon Gérôme</p>
+
+    <div class="homepageQuery">
+    <form>
+        <input type="text" id="artistNameInput" name="artistname" placeholder="Enter artist's name">
+    </form>
+    <button id="generatebutton" type='artbutton'>Generate</button>
+    </div>
+
+    <!-- For displaying all ids found that match search query. Each id represents a work created by the artist -->
+    <p id="allIDs"></p>
+    <!-- For displaying individual object/item/artwork -->
+    <div id="works"></div>
+    <!-- Just to make things pretty -->
+    <p id="loadingMET"></p>
+    <p id="loadingCMA"></p>
+    <p id="loadingTimeline"></p>
+    <!-- Displays error messages -->
+    <p id="error"></p>
+</div>
+
+<!-- Timeline goes here -->
+<div class="timeline" id="timeline">
+</div>
+
+
+
+<script src="assets/my-script.js"></script>
